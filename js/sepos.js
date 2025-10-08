@@ -35,10 +35,10 @@ const seposActivePlayers = activePlayers.filter(
       `
       <div class="w3-card-4 w3-border w3-border-red w3-center w3-padding w3-asphalt w3-quarter w3-container">
       <h3>${element.fullName().toUpperCase()}</h3>
-    <img src="FOTOS/${element.id}.png" class="w3-${myColor(element.school)} w3-circle" alt="Pic" width="85px">
+    <img src="sepPics/${element.id}.png" class="w3-${myColor(element.school)} w3-circle" alt="Pic" width="85px">
     <p>  <span class="w3-text-red">DOB:</span> ${fdate(element.birthDay)} </p>
       <p>  <span class="w3-text-red">AGE:</span> ${age(element.birthDay)} </p>
-    <a href="dob/${element.id}.pdf" target="_blank"><button class="w3-btn w3-round-large w3-amber">My Birth Certificate</button> </a>
+    <a href="sepDob/${element.id}.pdf" target="_blank"><button class="w3-btn w3-round-large w3-amber">My Birth Certificate</button> </a>
       </div>
       `
       
@@ -121,10 +121,10 @@ function u17players() {
         `
         <div class="w3-card-4 w3-border w3-border-red w3-center w3-padding w3-asphalt w3-quarter w3-container">
         <h3>${element.fullName().toUpperCase()}</h3>
-      <img src="FOTOS/${element.id}.png" class="w3-${myColor(element.school)} w3-circle" alt="Pic" width="85px">
+      <img src="sepPics/${element.id}.png" class="w3-${myColor(element.school)} w3-circle" alt="Pic" width="85px">
       <p>  <span class="w3-text-red">DOB:</span> ${fdate(element.birthDay)} </p>
       <p>  <span class="w3-text-red">AGE:</span> ${age(element.birthDay)} </p>
-      <a href="dob/${element.id}.pdf" target="_blank"><button class="w3-btn w3-round-large w3-amber">My Birth Certificate</button> </a>
+      <a href="sepDob/${element.id}.pdf" target="_blank"><button class="w3-btn w3-round-large w3-amber">My Birth Certificate</button> </a>
         </div>
         `
         
@@ -178,10 +178,10 @@ function u17players() {
           `
           <div class="w3-card-4 w3-border w3-border-red w3-center w3-padding w3-asphalt w3-quarter w3-container">
           <h3>${element.fullName().toUpperCase()}</h3>
-      <img src="FOTOS/${element.id}.png" class="w3-${myColor(element.school)} w3-circle" alt="Pic" width="85px">
+      <img src="sepPics/${element.id}.png" class="w3-${myColor(element.school)} w3-circle" alt="Pic" width="85px">
       <p>  <span class="w3-text-red">DOB:</span> ${fdate(element.birthDay)} </p>
       <p>  <span class="w3-text-red">AGE:</span> ${age(element.birthDay)} </p>
-        <a href="dob/${element.id}.pdf" target="_blank"><button class="w3-btn w3-round-large w3-amber">My Birth Certificate</button> </a>
+        <a href="sepDob/${element.id}.pdf" target="_blank"><button class="w3-btn w3-round-large w3-amber">My Birth Certificate</button> </a>
           </div>
           `
           
