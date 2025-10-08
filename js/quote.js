@@ -100,7 +100,7 @@ const quotes =[
         quote:'Success is the sum of small efforts – repeated day in and day out.',
         author:'— Robert Collier, American Author',
         Translation:'Practice makes perfect.'
-    }
+    },
 
     {
         quote:'Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do.',
@@ -224,7 +224,7 @@ const quotes =[
         author:'— Michael Owen, English professional Soccer player',
         Translation:'The way you practice is the way you will play the game.'
     },
-
+    
 
     {
         quote:'If it doesn\’t challenge you, it won\’t change you.',
