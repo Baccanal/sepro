@@ -72,7 +72,7 @@ function newImage(){
        
         let proChosenImage = shuffle_proImages[proCount];
         
-        document.getElementById('pro-images').innerHTML = `<img src="images/pro/${proChosenImage}.png" alt="Provi Eye" class="responsive w3-border" width="550px"> `;
+        document.getElementById('pro-images').innerHTML = `<img src="proFotos/${proChosenImage}.png" alt="Provi Eye" class="responsive w3-border" width="550px"> `;
         
        
     
@@ -89,7 +89,7 @@ function newImage(){
              
              
              
-             document.getElementById('sep-images').innerHTML = `<img src="images/sep/${sepChosenImage}.png" alt="" class="responsive w3-border" width="550px"> `;
+             document.getElementById('sep-images').innerHTML = `<img src="sepFotos/${sepChosenImage}.png" alt="" class="responsive w3-border" width="550px"> `;
             
          
              sepCount++; 
