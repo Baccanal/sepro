@@ -328,10 +328,16 @@ function fdate(dob) {
 
 //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
-function myColor(school) {
+function switchSchoolColor(school) {
     if (school.toUpperCase() == "PROVI"){return "light-blue";
   
 } else if (school.toUpperCase() == "SEPOS"){return "amber";}
-   
+
+}
+
+function switchSchoolPics(school) {
+    if (school.toUpperCase() == "PROVI"){return "proPics";
+  
+} else if (school.toUpperCase() == "SEPOS"){return "sepPics";}
 
 }

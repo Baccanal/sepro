@@ -32,7 +32,7 @@ const playersTodayMonthSorted = playersTodayMonth.sort(function(a,b) {
 
 
 
-let playerMonth = " "; let playerDay = " "; let schoolColor = "w3-white";
+let playerMonth = " "; let playerDay = " "  ; let schoolColor = "w3-white";
 
 //Output the players of this month
 playersTodayMonthSorted.forEach( (element) => 
@@ -43,10 +43,10 @@ playerMonth +=
 
 `
     <div class="w3-card-4 w3-center w3-padding w3-asphalt ">
-    <p class="w3-${myColor(element.school)}" style="text-shadow:1px 1px 0 #444"> ${element.school.toUpperCase()} </p>
+    <p class="w3-${switchSchoolColor(element.school)}" style="text-shadow:1px 1px 0 #444"> ${element.school.toUpperCase()} </p>
     <p>${element.fullName().toUpperCase()}</p>
-    <img src="FOTOS/${element.id}.png" class="w3-${myColor(element.school)} w3-circle" alt="Pic" width="60px">
-    <p> <span class="w3-text-${myColor(element.school)}">BIRTHDAY:</span> ${myBirthMonthDay(element.birthDay)} (${findZodiacSign(new Date(element.birthDay).getDate(), new Date(element.birthDay).getMonth())}) </p>
+    <img src="${switchSchoolPics(element.school)}/${element.id}.png" class="w3-${switchSchoolColor(element.school)} w3-circle" alt="Pic" width="60px">
+    <p> <span class="w3-text-${switchSchoolColor(element.school)}">BIRTHDAY:</span> ${myBirthMonthDay(element.birthDay)} (${findZodiacSign(new Date(element.birthDay).getDate(), new Date(element.birthDay).getMonth())}) </p>
     </div>
 
 `
@@ -69,10 +69,10 @@ playerDay +=
 
 `
     <div class="w3-card-4 w3-center w3-padding w3-asphalt ">
-    <p class="w3-${myColor(element.school)}" style="text-shadow:1px 1px 0 #444"> ${element.school.toUpperCase()} </p>
+    <p class="w3-${switchSchoolColor(element.school)}" style="text-shadow:1px 1px 0 #444"> ${element.school.toUpperCase()} </p>
     <p>${element.fullName().toUpperCase()}</p>
-    <img src="FOTOS/${element.id}.png" class="w3-${myColor(element.school)} w3-circle" alt="Pic" width="60px">
-    <p> <span class="w3-text-${myColor(element.school)}">AGE:</span> ${age(element.birthDay)} </p>
+    <img src="${switchSchoolPics(element.school)}/${element.id}.png" class="w3-${switchSchoolColor(element.school)} w3-circle" alt="Pic" width="60px">
+    <p> <span class="w3-text-${switchSchoolColor(element.school)}">AGE:</span> ${age(element.birthDay)} </p>
     </div>  
 
 `
@@ -80,7 +80,7 @@ playerDay +=
 
 );
 
-if(playerDay !== " ") {document.getElementById("birthday").innerHTML = `<div class="w3-flex" style="gap:50px;flex-wrap:wrap; justify-content:center"> ${playerDay} </div>`; }
+if(playerDay !== " ") {document.getElementById("birthday").innerHTML = ` <div class="w3-flex" style="gap:50px;flex-wrap:wrap; justify-content:center"> <div> <img src="images/birthDay.png" alt="Pic" width="150px"> </div> ${playerDay} </div>`; }
 if(playerMonth !== " "){document.getElementById("birthmonth").innerHTML = `<div class="w3-flex" style="gap:50px;flex-wrap:wrap; justify-content:center"> ${playerMonth} </div>` ;}
 
 
