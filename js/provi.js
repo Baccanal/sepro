@@ -21,10 +21,6 @@ const proviActivePlayers = activePlayers.filter(
       division(element.birthDay) === "U15 Player"
       );
 
-
-
-
-
       
       const topcard = `<p class="w3-XXlarge w3-light-blue"> U15 PLAYERS </p>`;      
       let datacard = '';
@@ -34,17 +30,12 @@ const proviActivePlayers = activePlayers.filter(
       `
       <div class="w3-card-4 w3-border w3-border-cyan w3-center w3-padding w3-asphalt w3-quarter w3-container">
       <h3>${element.fullName().toUpperCase()}</h3>
-    <img src="FOTOS/${element.id}.png" class="w3-${myColor(element.school)} w3-circle" alt="Pic" width="85px">
+    <img src="${switchSchoolPics(element.school)}/${element.id}.png" class="w3-${switchSchoolColor(element.school)} w3-circle" alt="Pic" width="85px">
     <p>  <span class="w3-text-cyan">DOB:</span> ${fdate(element.birthDay)} </p>
       <p>  <span class="w3-text-cyan">AGE:</span> ${age(element.birthDay)} </p>
-    <a href="dob/${element.id}.pdf" target="_blank"><button class="w3-btn w3-round-large w3-light-blue">My Birth Certificate</button> </a>
+    <a href="${switchSchoolDob(element.school)}/${element.id}.pdf" target="_blank"><button class="w3-btn w3-round-large w3-light-blue">My Birth Certificate</button> </a>
       </div>
-      `
-      
-      
-          
-      
-          
+      `   
       
   });
   
@@ -80,11 +71,6 @@ function u17players() {
         division(element.birthDay) === "U17 Player"
         );
   
-  
-  
-  
-  
-        
         const topcard = `<p class="w3-XXlarge w3-light-blue"> U17 PLAYERS </p>`;
         
         let datacard = '';
@@ -94,18 +80,13 @@ function u17players() {
         `
         <div class="w3-card-4 w3-border w3-border-white w3-center w3-padding w3-asphalt w3-quarter w3-container">
         <h3>${element.fullName().toUpperCase()}</h3>
-      <img src="FOTOS/${element.id}.png" class="w3-${myColor(element.school)} w3-circle" alt="Pic" width="85px">
+      <img src="${switchSchoolPics(element.school)}/${element.id}.png" class="w3-${switchSchoolColor(element.school)} w3-circle" alt="Pic" width="85px">
       <p>  <span class="w3-text-cyan">DOB:</span> ${fdate(element.birthDay)} </p>
       <p>  <span class="w3-text-cyan">AGE:</span> ${age(element.birthDay)} </p>
-      <a href="dob/${element.id}.pdf" target="_blank"><button class="w3-btn w3-round-large w3-light-blue">My Birth Certificate</button> </a>
+      <a href="${switchSchoolDob(element.school)}/${element.id}.pdf" target="_blank"><button class="w3-btn w3-round-large w3-light-blue">My Birth Certificate</button> </a>
         </div>
         `
-        
-        
-            
-        
-            
-        
+     
     });
     
     document.getElementById("headcard").innerHTML = topcard;
@@ -137,10 +118,6 @@ function u17players() {
           division(element.birthDay) === "Open Player"
           );
     
-    
-    
-    
-    
           
           const topcard = `<p class="w3-XXlarge w3-light-blue"> OPEN PLAYERS </p>`;
           
@@ -151,18 +128,13 @@ function u17players() {
           `
           <div class="w3-card-4 w3-border w3-border-white w3-center w3-padding w3-asphalt w3-quarter w3-container">
           <h3>${element.fullName().toUpperCase()}</h3>
-        <img src="FOTOS/${element.id}.png" class="w3-${myColor(element.school)} w3-circle" alt="Pic" width="85px">
+        <img src="${switchSchoolPics(element.school)}/${element.id}.png" class="w3-${switchSchoolColor(element.school)} w3-circle" alt="Pic" width="85px">
         <p>  <span class="w3-text-cyan">DOB:</span> ${fdate(element.birthDay)} </p>
         <p>  <span class="w3-text-cyan">AGE:</span> ${age(element.birthDay)} </p>
-        <a href="dob/${element.id}.pdf" target="_blank"><button class="w3-btn w3-round-large w3-light-blue">My Birth Certificate</button> </a>
+        <a href="${switchSchoolDob(element.school)}/${element.id}.pdf" target="_blank"><button class="w3-btn w3-round-large w3-light-blue">My Birth Certificate</button> </a>
           </div>
           `
-          
-          
-              
-          
-              
-          
+           
       });
       
       document.getElementById("headcard").innerHTML = topcard;

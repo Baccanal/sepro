@@ -341,3 +341,12 @@ function switchSchoolPics(school) {
 } else if (school.toUpperCase() == "SEPOS"){return "sepPics";}
 
 }
+
+
+
+function switchSchoolDob(school) {
+    if (school.toUpperCase() == "PROVI"){return "proDob";
+  
+} else if (school.toUpperCase() == "SEPOS"){return "sepDob";}
+
+}
