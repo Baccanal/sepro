@@ -568,7 +568,7 @@ const players = [
         school: "Provi",
         klass: "2L",
         house: "St.Patrick",
-        active: "YES",
+        active: "NO",
         fullName: function() { return this.firstName + " " + this.lastName;}
     },
     
@@ -661,7 +661,7 @@ const players = [
         school: "Provi",
         klass: "1L",
         house: " ",
-        active: "YES",
+        active: "NO",
         fullName: function() { return this.firstName + " " + this.lastName;}
     },
 
