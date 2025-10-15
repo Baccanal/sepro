@@ -16,97 +16,55 @@
   font-family: "Lobster", Sans-serif;
 }
 
-
-.grid-container {
-          display: grid;
-          grid-template-columns: auto auto auto;
-          gap: 10px;
-          
-          padding: 10px;
-        }
-        
-        .grid-container > div {
-          
-          text-align: center;
-          padding: 12px;
-          font-size: 16px;
-        }
-        
-        .item1 {
-          grid-column-start: 1;
-          grid-column-end: 4;
-        }
-
-        .item2 {
-          grid-column-start: 1;
-          grid-column-end: 3;
-        }
     </style>
 </head>
 <body">
     
     
-<section class="w3-container w3-deep-purple w3-topbar w3-border-black">
+<section id="header" ></section>
 
-    <header >
-            <h1 class="w3-center">
-                <img src="images/logo.png" alt="TORNADO STARS VC LOGO" class="responsive" width="200px">  <span class="w3-xxlarge w3-container w3-lobster" style="text-shadow:1px 1px 0 #444">TORNADO STARS VOLLEYBALL ACADEMY</span>            </h1>
-    </header>
-    
-</section>
+<section id="navigation"></section>
 
-<div class="w3-bar w3-black">
-    <a href="index.html" class="w3-bar-item w3-button w3-mobile">HOME</a>
-    <a href="quotes.html" class="w3-bar-item w3-button w3-mobile">QUOTES</a>
-    <a href="birthdays.html" class="w3-bar-item w3-button w3-mobile">BIRTHDAYS</a>
-    <a href="sepos.html" class="w3-bar-item w3-button w3-mobile">SEPOSS</a>
-    <a href="provi.html" class="w3-bar-item w3-button w3-mobile">PROVI</a>
-    <a href="att-pro.html" class="w3-bar-item w3-button w3-mobile">ATT-PROVI</a>
-    <a href="att-sep.html" class="w3-bar-item w3-button w3-mobile">ATT-SEPOSS</a>
-  </div> 
-    
    
   
   
-  <section class="">
+  <section class="w3-center">
     <main>
 
 
-        <div class=" w3-border w3-border-white w3-text-amber w3-blue w3-padding-8  w3-xxlarge w3-center" style="text-shadow:1px 1px 0 #444"><b>Happy Birthday!!</b></div>
         
         
-        <div class="grid-container w3-win8-teal">
+       
 
             
-            <div class="item2 w3-win8-teal">
+            <div class="w3-blue">
 
                 
+                <div class=" w3-border w3-border-white w3-text-amber w3-indigo w3-padding-8  w3-xxlarge w3-center" style="text-shadow:1px 1px 0 #444"><b id="today"> </b></div>
                 
-                <h2 id="today">  </h2>
+                
 
-                <div class="" id="birthday"> <h3 class="w3-text-amber w3-xlarge">SORRY!! No Birthdays today.</h3> </div>
+             <p class="w3-padding-8">  <div> <span>Zodiac Sign:</span> <b class="w3-xlarge w3-text-brown" id="zodiacsign"></b> </div> <b class="w3-small w3-text-brown" id="zodiacTime"></b> </p> 
+                    <p class="" id="zodiacimage"> </p> 
+                    
+                    <div class="" > <span> Symbol:</span>  <b id="zodiacSymbol" class="w3-large w3-text-brown"  id="today"> </b>  </div>
+                
+
+                    
 
 
                 
             </div>
 
 
-
-            <div class="item4 w3-win8-teal">
-
-                
-                
-                <h4 class="w3-center">   <span id="zodiacsign"></span>  <span id="zodiacimage"> </span> <span id="zodiacSymbol"></span> </h4>
-                    <p id="zodiacTime"></p>
-
-
-                
-            </div>  
-
+            <div class=" w3-light-blue">
+            
+                <div class=" w3-border w3-border-white w3-text-amber w3-indigo w3-padding-8  w3-xxlarge w3-center" style="text-shadow:1px 1px 0 #444"><b>Birthdays</b></div>
+                    <div class="w3-padding-16" id="birthday"> <h3 class="w3-text-brown w3-xlarge">SORRY!! No Birthdays today.</h3> </div>
 
             
              
-        </div>
+            </div>
             
                
        
@@ -119,7 +77,7 @@
 
   
   
-  <section class="w3-win8-teal">
+  <section class="w3-blue">
         <main>
             
                 
@@ -127,11 +85,11 @@
 
                 <div class="w3-center">
                     
-                    <div class="w3-border w3-border-white w3-text-amber w3-blue w3-padding-8  w3-xxlarge w3-center" style="text-shadow:1px 1px 0 #444">
-                        <b id="thisMonth">Birthdays This Month</b></div>
+                    <div class="w3-border w3-border-white w3-text-amber w3-indigo w3-padding-8  w3-xxlarge w3-center" style="text-shadow:1px 1px 0 #444">
+                        <b>Upcoming Birthdays</b></div>
                         
                     <div class="" id="birthmonth"> 
-                        <h3>SORRY!! No Birthdays this month.</h3> 
+                        <h3 class="w3-text-brown w3-xlarge">SORRY!! No Birthdays this month.</h3> 
                     </div>
         
                     
@@ -149,12 +107,7 @@
 
 
 
-    <footer class="w3-container w3-deep-purple w3-border w3-border-black w3-center w3-topbar w3-bottombar">
-            
-        &copy; SAMMY-99 VOLLEYBALL EST. 2025
-    
-   
-</footer>
+    <section id="footer" ></section>
 
 
 
@@ -165,7 +118,11 @@
         
 
     
+      
 
+<script src="js/build.js"></script>
+<script src="https://kit.fontawesome.com/3b53121f7c.js" crossorigin="anonymous"></script>
+    
     
     <script src="js/myFunctions.js"></script>
     <script src="js/players.js"></script>
