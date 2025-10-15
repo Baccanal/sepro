@@ -1,6 +1,8 @@
-const proImages =["1","2","3","4","5"];
+//const proImages =["1","2","3","4","5"];
 
-const sepImages =["1","2","3","4","5"];
+const proImages =["1"];
+
+const sepImages =["1","2","3"];
 
 
 function shuffleArray(array) {
@@ -52,8 +54,8 @@ function newImage(){
    let sepChosenImage = shuffle_sepImages[sepCount];
     let proChosenImage = shuffle_proImages[proCount];
     
-    document.getElementById('pro-images').innerHTML = `<img src="proFotos/${proChosenImage}.png" alt="Provi Eye" class="responsive w3-border" width="550px"> `;
-    document.getElementById('sep-images').innerHTML = `<img src="sepFotos/${sepChosenImage}.png" alt="" class="responsive w3-border" width="550px"> `;
+    document.getElementById('pro-images').innerHTML = `<img src="proFotos/${proChosenImage}.png" alt="Provi Eye" class="responsive w3-border" width="350px"> `;
+    document.getElementById('sep-images').innerHTML = `<img src="sepFotos/${sepChosenImage}.png" alt="" class="responsive w3-border" width="350px"> `;
    
 
     sepCount++; proCount++;

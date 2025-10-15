@@ -28,9 +28,9 @@ const proviActivePlayers = activePlayers.filter(
       pro_u15.forEach(element => {
       datacard += 
       `
-      <div class="w3-card-4 w3-border w3-border-cyan w3-center w3-padding w3-asphalt w3-quarter w3-container">
+      <div class="w3-card-4 w3-border w3-border-cyan w3-center w3-padding w3-asphalt w3-quarter w3-container picture">
       <h3>${element.fullName().toUpperCase()}</h3>
-    <img src="${switchSchoolPics(element.school)}/${element.id}.png" class="w3-${switchSchoolColor(element.school)} w3-circle" alt="Pic" width="85px">
+    <img src="${switchSchoolPics(element.school)}/${element.id}.png" class="w3-${switchSchoolColor(element.school)} w3-circle" alt="Pic" width="150px">
     <p>  <span class="w3-text-cyan">DOB:</span> ${fdate(element.birthDay)} </p>
       <p>  <span class="w3-text-cyan">AGE:</span> ${age(element.birthDay)} </p>
     <a href="${switchSchoolDob(element.school)}/${element.id}.pdf" target="_blank"><button class="w3-btn w3-round-large w3-light-blue">My Birth Certificate</button> </a>
@@ -40,7 +40,7 @@ const proviActivePlayers = activePlayers.filter(
   });
   
   document.getElementById("headcard").innerHTML = topcard;
-  document.getElementById("players").innerHTML = `<div class="w3-flex" style="gap:25px;  flex-flow:row wrap"> ${datacard} </div>`;
+  document.getElementById("players").innerHTML = `<div class="wrapper"> ${datacard} </div>`;
   return ;
 
 }
@@ -78,9 +78,9 @@ function u17players() {
         pro_u17.forEach(element => {
         datacard += 
         `
-        <div class="w3-card-4 w3-border w3-border-white w3-center w3-padding w3-asphalt w3-quarter w3-container">
+        <div class="w3-card-4 w3-border w3-border-white w3-center w3-padding w3-asphalt w3-quarter w3-container picture">
         <h3>${element.fullName().toUpperCase()}</h3>
-      <img src="${switchSchoolPics(element.school)}/${element.id}.png" class="w3-${switchSchoolColor(element.school)} w3-circle" alt="Pic" width="85px">
+      <img src="${switchSchoolPics(element.school)}/${element.id}.png" class="w3-${switchSchoolColor(element.school)} w3-circle" alt="Pic" width="150px">
       <p>  <span class="w3-text-cyan">DOB:</span> ${fdate(element.birthDay)} </p>
       <p>  <span class="w3-text-cyan">AGE:</span> ${age(element.birthDay)} </p>
       <a href="${switchSchoolDob(element.school)}/${element.id}.pdf" target="_blank"><button class="w3-btn w3-round-large w3-light-blue">My Birth Certificate</button> </a>
@@ -90,7 +90,7 @@ function u17players() {
     });
     
     document.getElementById("headcard").innerHTML = topcard;
-    document.getElementById("players").innerHTML = `<div class="w3-flex" style="gap:25px;  flex-flow:row wrap"> ${datacard} </div>`;
+    document.getElementById("players").innerHTML = `<div class="wrapper"> ${datacard} </div>`;
     return ;
   
   }
@@ -126,9 +126,9 @@ function u17players() {
           pro_u20.forEach(element => {
           datacard += 
           `
-          <div class="w3-card-4 w3-border w3-border-white w3-center w3-padding w3-asphalt w3-quarter w3-container">
+          <div class="w3-card-4 w3-border w3-border-white w3-center w3-padding w3-asphalt w3-quarter w3-container picture">
           <h3>${element.fullName().toUpperCase()}</h3>
-        <img src="${switchSchoolPics(element.school)}/${element.id}.png" class="w3-${switchSchoolColor(element.school)} w3-circle" alt="Pic" width="85px">
+        <img src="${switchSchoolPics(element.school)}/${element.id}.png" class="w3-${switchSchoolColor(element.school)} w3-circle" alt="Pic" width="150px">
         <p>  <span class="w3-text-cyan">DOB:</span> ${fdate(element.birthDay)} </p>
         <p>  <span class="w3-text-cyan">AGE:</span> ${age(element.birthDay)} </p>
         <a href="${switchSchoolDob(element.school)}/${element.id}.pdf" target="_blank"><button class="w3-btn w3-round-large w3-light-blue">My Birth Certificate</button> </a>
@@ -138,7 +138,7 @@ function u17players() {
       });
       
       document.getElementById("headcard").innerHTML = topcard;
-      document.getElementById("players").innerHTML = `<div class="w3-flex" style="gap:25px;  flex-flow:row wrap"> ${datacard} </div>`;
+      document.getElementById("players").innerHTML = `<div class="wrapper"> ${datacard} </div>`;
       return ;
     
     }

@@ -708,19 +708,6 @@ const players = [
 
     {
         id: "Pro1038",
-        firstName: "S",
-        lastName: "Burris",
-        nickName:"Yellows",
-        birthDay: "2025-01-01\n",
-        school: "Provi",
-        klass: "2G",
-        house: "St.Patrick",
-        active: "NO",
-        fullName: function() { return this.firstName + " " + this.lastName;}
-    },
-
-    {
-        id: "Pro1043",
         firstName: "Emily",
         lastName: "Walcott",
         nickName:"Emily",
@@ -731,7 +718,8 @@ const players = [
         active: "YES",
         fullName: function() { return this.firstName + " " + this.lastName;}
     }
-    
+
+   
 
    
 ]
