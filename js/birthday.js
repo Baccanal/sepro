@@ -1,8 +1,8 @@
-//const todayMonth = new Date().getMonth();
-const todayMonth = 3;
+const todayMonth = new Date().getMonth();
+//const todayMonth = 3;
 
-//const todayDate = new Date().getDate();
-const todayDate = 3;
+const todayDate = new Date().getDate();
+//const todayDate = 3;
 
 
 /* ********** order all players by birthday *********** */
