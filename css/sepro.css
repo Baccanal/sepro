@@ -1,72 +1,746 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-/* GENERAL FONNTS, SPACINGS, BODY */
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+/* Global Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* Ensures consistent box model */
 }
 
-body{
-  font-family: kImpact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;  
-  
+html,
+body {
+  margin: 0; /* Remove default browser margins */
+  padding: 0; /* Remove default browser padding */
+  height: 100%; /* Ensure html and body take full height */
+  width: 100%; /* Ensure html and body take full width */
 }
 
-kimg{
+.fullscreen-element {
+  height: 100vh; /* 100% of the viewport height */
+  /*width: 100vw; /* 100% of the viewport width */
+  /* Add other styles as needed, e.g., background-color, display, etc. */
+}
+
+html {
+  font-size: 62.5%; /* Sets base font size for easy rem calculations (1rem = 10px) */
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+picture,
+svg {
+  max-width: 100%;
   display: block;
+  margin: auto;
+}
+
+body {
+  /*font-family: Arial, sans-serif;  Example font stack */
+  line-height: 1.7;
+  color: #333; /* Example default text color */
+  min-height: 100vh; /* Ensures body takes full viewport height */
+  width: 100vw; /* Ensures body takes full viewport width */
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+  margin: 0;
+  padding: 0;
+  background-color: #ffd3ac;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  /*color: #8c93bd; */
+}
+
+:root {
+  --theme-primary-color: #be5103;
+
+  --provi-secondary-color: #90d5ff;
+  --provi-primary-color: #00a9ef;
+  --provi-tertiary-color: #1e90ff;
+
+  --sepos-primary-color: #660033;
+  --sepos-secondary-color: #ffbf00;
+
+  --goldernyellow: #ffc000;
+
+  --cream: #fdfbd4;
+  --peach: #ffd3ac;
+  --celadon: #a8dcab;
+  --soft-coral: #f88379;
+  --coral: #ff7f50;
+  --cyan: #7fffd4;
+  --blue-green: #00cecb;
+  --mahogany: #c04000;
+  --burnt-orange: #be5103;
+  --nude: #f7d9bc;
+  --ecru: #e0cd95;
+  --violet: #8000ff;
+  --deep-purple: rgb(97, 24, 185);
+  --red-brown: #942222;
+  --maroon: #800000;
+  --burgundy: #660033;
+  --tawny: #662e2e;
+  --amber: #ffbf00;
+  --light-blue: #90d5ff;
+  --dark-cyan: #008b8b;
+  --onyx: #353839;
+  --off-black: #253342;
+  --jet-black: #252525;
+  --hot-pink: #ff69b4;
+  --malachite: #0bda51;
+  --off-white: #f2f0ef;
+  --aqua: #00fff0;
+
+  --chartreuse: #ccff00;
+  --ruby: #e0115f;
+  --neon-green: #2cff05;
+  --blue: #0000ff;
+  --navy-blue: #000080;
+  --dark-blue: #00008b;
+  --midnight-blue: #191970;
+  --dark-sapphire: #082567;
+  --broncos-blue: #002244;
+  --dallas-cowboys-blue: #041e42;
+}
+
+.pro1-bg {
+  background-color: var(--provi-primary-color);
+}
+
+.pro1-text {
+  color: var(--provi-primary-color);
+}
+
+.pro2-bg {
+  background-color: var(--provi-secondary-color);
+}
+
+.pro2-text {
+  color: var(--provi-secondary-color);
+}
+
+.pro3-bg {
+  background-color: var(--provi-tertiary-color);
+}
+
+.pro3-text {
+  color: var(--provi-tertiary-color);
+}
+
+.sep1-bg {
+  background-color: var(--sepos-primary-color);
+}
+
+.sep1-text {
+  color: var(--sepos-primary-color);
+}
+
+.sep2-bg {
+  background-color: var(--sepos-secondary-color);
+}
+
+.sep2-text {
+  color: var(--sepos-secondary-color);
+}
+
+/*/////////////////////////////////*/
+.w3-roboto{font-family: Roboto, sans-serif;}
+
+.w3-sofia {
+  font-family: Sofia, cursive;
+}
+
+.w3-tangerine {
+  font-family: "Tangerine", serif;
+}
+
+.w3-allerta {
+  font-family: "Allerta Stencil", Sans-serif;
+}
+
+.w3-lobster {
+  font-family: "Lobster", Sans-serif;
+}
+
+/***    HEADER + FOOTER   ****/
+
+footer.footer,
+header.header {
+  kkbackground-color: var(--violet);
+  color: #fff;
+  padding: 0.1rem;
+  font-family: poppins;
+  font-weight: 800;
+  text-align: center;
+  overflow: hidden;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clubName {
+  color: var(--ruby);
+  text-shadow: -0.3rem 0rem 0.1rem #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-weight: bolder;
+  font-size: 4rem;
+  font-family: Roboto, sans-serif;
+}
+.clubMotto {
+  font-family: Roboto;
+  font-weight: 800;
+  font-size: 2.5rem;
+  color: var(--navy-blue);
+  font-family: Sofia, cursive;
+}
+
+header div.logo img {
+  animation-name: spin;
+  animation-duration: 21s;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*/////////////////////////////////*/
+/***  NAVIGATION  ****/
+
+/*////////////m/////////////////////*/
+/***  Index page  ****/
+
+.frame {
+  width: 44rem;
+  height: 33rem;
+  margin: auto;
+  display: block;
+  overflow: hidden;
+}
+
+/*/////////////////////////////////*/
+
+/***  INTRO  ****/
+
+.intro {
+  background-color: var(--burnt-orange);
+  color: #fff;
+  kktext-shadow: 1px 1px 8px #222;
+  text-align: center;
+  font-size: 24px;
+  overflow: hidden;
+  border: #fff solid 0.1rem;
+  z-index: -100;
+  font-weight: bold;
+   
+  
+  }
+}
+.visits {
+}
+
+
+/*/////////////////////////////////*/
+/***  BIRTHDAYS  ****/
+.zodiacRead {
+  line-height: 3.4rem;
+  background-color: var(--off-white);
+  color: var(--off-black);
+  padding: 0.6rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+#birthday .zodiacRead p span {
+  color: #0000ff;
+  font-weight: bold;
+}
+
+/*/////////////////////////////////*/
+/***  DASHBOARD  ****/
+
+.sepHouseSelect,
+.custom-sep th {
+  background-color: var(--sepos-primary-color);
+  color: #fff;
+}
+
+.custom-sep td {
+  background-color: var(--sepos-secondary-color);
+}
+
+.proHouseSelect,
+.custom-pro th {
+  background-color: var(--provi-primary-color);
+  color: #fff;
+}
+
+.custom-pro td {
+  background-color: var(--provi-secondary-color);
+}
+
+select#sepHouse,
+select#proHouse {
+  font-size: 1.8rem;
+}
+
+/*/////////////////////////////////*/
+/***  CONTAINER  ****/
+.container-xxl {
+  border: #000 solid 0.1rem;
+
+  background-color: var(--nude);
+}
+
+main {
+  background-color: var(--peach);
+}
+
+.patrick {
+  background-color: #0b6b66;
+}
+
+img.sep {
+  background-color: var(--sepos-secondary-color);
+}
+
+body {
+  background-color: var(--body-primary-color);
+}
+
+.pro-bg {
+  background-color: var(--provi-secondary-color);
+}
+
+.sep-bg {
+  background-color: var(--provi-secondary-color);
+}
+
+nav {
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+/*/////////////////////////////////*/
+
+.card {
+  color: #fff;
+}
+.coral {
+  color: #ff7f50;
+}
+
+#headcard {
+  background-color: var(--burnt-orange);
+  display: block;
+  color: var(--off-white);
+  border: #353839 solid 0.1rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.lobster {
+  font-family: "Lobster", Sans-serif;
+}
+
+/*/ ////////////////////////////////*/
+/*       CARDS*********/
+/*
+.card {
+  background-color: var(--jet-black);
+  border: var(--jet-black) solid 0.3rem;
+  padding: 0.2rem;
+}
+
+div.card img.pro {
+  background-color: var(--provi-secondary-color);
+}
+
+div.card img.sep {
+  background-color: var(--sepos-secondary-color);
+}
+
+.card-body p.pro,
+.card-body span.pro {
+  color: var(--provi-tertiary-color);
+  font-weight: bold;
+}
+
+.card-body p.sep,
+.card-body span.sep {
+  color: var(--ruby);
+  font-weight: bold;
+}
+
+/*/ ////////////////////////////////*/
+/*       Riddle              *********/
+
+.answerBox {
+  background-color: var(--off-white);
+  color: var(--off-black);
+  font-weight: 900;
+  padding: 3px;
+}
+
+.answer {
+  display: none;
+}
+
+#clickToShow {
+  margin: 1rem auto;
+  width: 100px;
+  border-radius: 50%;
+  background-color: var(--amber);
+  font-size: 1.8 rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  color: #000;
+  box-shadow: 1px 1px 8px #fff;
+  cursor: pointer;
+}
+
+.riddleBtn {
+  font-size: 1.9 rem;
+  font-weight: bold;
+  background-color: var(--nude);
+  border: var(--burnt-orange) solid 0.3rem;
+  color: var(--burnt-orange);
+  margin: 1.5rem auto;
+  border-radius: 1rem;
+  padding: 0.6rem;
+}
+
+.blockquote-footer {
+  font-size: 1.7rem;
+}
+
+/*  MEMORY GAME   ***********************************************************************************/
+
+.memory-game {
+  height: 100vh;
+  max-width: 500px;
+  max-height: 600px;
+
+  display: flex;
+  flex-wrap: wrap;
+  
+  margin: 0 auto;
+
+  perspective: 1000px;
+}
+
+.memory-card {
+  height: calc(20% - 10px);
+  width: calc(25% - 10px);
+  margin: 5px;
+  border: 3px solid #555;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  transform: scale(1);
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.memory-card:active {
+  transform: scale(0.97);
+  transition: transform 0.2s;
+}
+
+.memory-card.flip {
+  transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  border-radius: 5px;
+
+  backface-visibility: hidden;
+}
+
+.front-face {
+  transform: rotateY(180deg);
+  background-color: wheat;
+  padding: 3px;
+}
+
+.back-face {
+  background-color: white;
+  padding: 10px;
+}
+
+/*  Photos    *****************************************************************************/
+
+.wrapper nav {
+  background-color: transparent;
+}
+.wrapper {
+  margin: 5px auto;
+  max-width: 1100px;
+}
+
+ul.items {
+  display: flex;
+  justify-content: center;
+}
+
+nav .items {
+  display: flex;
+
+  flex-wrap: wrap;
+}
+
+nav .items .item {
+  /*
+  padding: 7px 25px;
+  
+  color: #007bff;
+  border: 2px solid wheat;
+  border-radius: 50px;
+  background-color: #fff;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  */
+
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  margin: 5px;
+  width: 50px;
+
+  /*
+  height: 40px;
+  width: 140px;
+  padding: 7px 25px;
+  background-color: #fff;
+  color: #666;
+  font-size: 20px;
+  line-height: 20px;
+  cursor: pointer;
+  margin: 20px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+*/
+}
+
+nav .items .item:hover {
+  color: #007bff;
+  background-color: #fff;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.gallery .image {
+  padding: 5px;
+  width: calc(100% / 4);
+}
+
+.gallery .image.show {
+  animation: animate 0.4s ease;
+}
+@keyframes animate {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.gallery .image.hide {
+  display: none;
+}
+
+.gallery .image span {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.gallery .image img {
+  width: 100%;
+  vertical-align: middle;
+  transition: all 0.3s ease;
+}
+
+.gallery .image:hover img {
+  transform: scale(1.1);
+}
+
+.preview-box {
+  color: #000;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+  opacity: 0;
+  border-radius: 3px;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0.9);
+  background-color: white;
+  max-width: 700px;
+  width: 100%;
+  padding: 0 5px 5px 5px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.preview-box.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.preview-box .details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px 15px 13px 10px;
+}
+
+.preview-box .details .title {
+  display: flex;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.details .title p {
+  margin-left: 5px;
+  font-weight: 800;
+}
+
+.details .icon {
+  color: #007bff;
+  font-size: 27px;
+  cursor: pointer;
+}
+
+.preview-box .image-box {
+  display: flex;
   width: 100%;
 }
 
-i.fa-certificate{
-  
-  box-shadow: 0 25px 31px rgba(0, 0, 0, 0.5);
-
+.image-box img {
+  width: 100%;
+  border-radius: 0 0 3px 3px;
 }
 
+.shadow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 2;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+}
 
-.wrapper{
-  display:flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 20px;
+.shadow.show {
+  display: block;
+}
+
+/*  Videos    ********************************************************************************/
+
+.container .main-video {
+  background: #fff;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.container .main-video video {
+  width: 100%;
+  border-radius: 5px;
+  max-height: 440px;
+}
+
+.container .main-video .title {
+  color: #333;
+  font-size: 23px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.v-wrapper .small-video img {
+  display: block;
+  margin: auto;
+}
+
+.v-container .main-video {
+  background: #fff;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.v-container .main-video video {
+  width: 100%;
+  border-radius: 5px;
+  max-height: 440px;
+}
+
+.v-container .main-video .title {
+  color: #eee;
+  font-size: 23px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  text-align: center;
+}
+
+.small-video {
+  border: #000 solid 0.1rem;
+}
+
+.v-container .v-wrapper figure {
+  background-color: #00bfff;
+}
+
+.v-container .small-video video {
+  width: 300px;
+  border-radius: 5px;
+  max-height: 200px;
+  overflow: hidden;
+}
+
+.v-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
   flex-wrap: wrap;
-  align-content: center;
-  
 }
 
-
-
-
-@media (max-width: 600px) {
-  .wrapper {   
-    flex-direction: column;
-  }
+.v-container .v-wrapper .small-video .title {
+  color: #333;
+  font-size: 17px;
+  text-align: center;
+  cursor: pointer;
 }
 
-
-@media (min-width: 601px) and (max-width: 768px) {
-  .picture {   
-    /*min-width: 300px;*/
-    flex-basis: 40%;
-  }
+.v-container .v-wrapper .small-video .title:hover {
+  color: #fff;
+  font-size: 20px;
 }
 
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .picture {   
-     /*min-width: 220px;*/
-     flex-basis: 30%;
-  }
+.v-container .v-wrapper .small-video:hover {
+  transform: scale(1.06);
+  color: #fff;
 }
 
-
-
-
-@media (min-width: 1025px) {
-  .picture {   
-     /*min-width: 220px;*/
-     flex-basis: 23%;
-  }
+.small-video:has(video.active) {
+  border: #fff solid 0.2rem;
 }
 
-
-
+.v-container .v-wrapper .small-video video.active + .title {
+  color: #fff;
+  font-weight: bold;
+}
