@@ -1,8 +1,8 @@
-//const proImages =["1","2","3","4","5"];
+const proImages =["1","2","3","4","5","6","7","8","9","10","11","12","13","14"];
 
-const proImages =["1"];
 
-const sepImages =["1","2","3"];
+
+const sepImages =["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"];
 
 
 function shuffleArray(array) {
@@ -54,8 +54,8 @@ function newImage(){
    let sepChosenImage = shuffle_sepImages[sepCount];
     let proChosenImage = shuffle_proImages[proCount];
     
-    document.getElementById('pro-images').innerHTML = `<img src="proFotos/${proChosenImage}.png" alt="Provi Eye" class="responsive w3-border" width="350px"> `;
-    document.getElementById('sep-images').innerHTML = `<img src="sepFotos/${sepChosenImage}.png" alt="" class="responsive w3-border" width="350px"> `;
+    document.getElementById('pro-images').innerHTML = `<img src="proFotos/${proChosenImage}.png" alt="Provi Eye" class="kfront img-fluid" > `;
+    document.getElementById('sep-images').innerHTML = `<img src="sepFotos/${sepChosenImage}.png" alt="" class="kfront img-fluid" > `;
    
 
     sepCount++; proCount++;
@@ -74,7 +74,7 @@ function newImage(){
        
         let proChosenImage = shuffle_proImages[proCount];
         
-        document.getElementById('pro-images').innerHTML = `<img src="proFotos/${proChosenImage}.png" alt="Provi Eye" class="responsive w3-border" width="550px"> `;
+        document.getElementById('pro-images').innerHTML = `<img src="proFotos/${proChosenImage}.png" alt="Provi Eye" class="kfront img-fluid" > `;
         
        
     
@@ -91,7 +91,7 @@ function newImage(){
              
              
              
-             document.getElementById('sep-images').innerHTML = `<img src="sepFotos/${sepChosenImage}.png" alt="" class="responsive w3-border" width="550px"> `;
+             document.getElementById('sep-images').innerHTML = `<img src="sepFotos/${sepChosenImage}.png" alt="" class="kfront img-fluid"> `;
             
          
              sepCount++; 
