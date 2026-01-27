@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SEPRO Website</title>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://www.w3schools.com/lib/w3-colors-metro.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://www.w3schools.com/lib/w3-colors-2017.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Tangerine"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Allerta+Stencil"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lobster&effect=shadow-multiple"
+    />
+
+    <link rel="icon" type="image/x-icon" href="images/vip/favicon.ico" />
+    <link rel="stylesheet" href="/css/sepro.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <script defer src="js/build.js"></script>
+  </head>
+  <body>
+    <div class="container-xxl">
+      <section class="w3-center" id="header"></section>
+      <section class="" id="navigation"></section>
+
+      <section class="w3-center intro">
+        <div class="">DASHBOARD 🏐</div>
+      </section>
+
+      <main class="row text-center w3-border w3-border-black">
+        <div class="w3-col m6 W3-border w3-border-black">
+          <h2 class="intro">PRO DIVISIONS</h2>
+          <div class="">
+            <table class="w3-table w3-bordered custom-pro">
+              <thead>
+                <tr class="proTableHead">
+                  <th>U15</th>
+                  <th>U17</th>
+                  <th>Open</th>
+                  <th>Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="proTableBody">
+                  <td id="pro15">pro15</td>
+                  <td id="pro17">pro17</td>
+                  <td id="pro20">pro20</td>
+                  <td id="proTotal">proTotal</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="w3-card">
+            <canvas class="w3-light-gray" id="proDivisionsChart"></canvas>
+          </div>
+        </div>
+
+        <div class="w3-col m6 w3-border w3-border-black">
+          <h2 class="intro">SEP DIVISIONS</h2>
+          <div class="">
+            <table class="w3-table w3-bordered custom-sep">
+              <thead>
+                <tr class="sepTableHead">
+                  <th>U15</th>
+                  <th>U17</th>
+                  <th>Open</th>
+                  <th>Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="sepTableBody">
+                  <td id="sep15">sep15</td>
+                  <td id="sep17">sep17</td>
+                  <td id="sep20">sep20</td>
+                  <td id="sepTotal">sepTotal</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="w3-card">
+            <canvas class="w3-light-gray" id="sepDivisionsChart"></canvas>
+          </div>
+        </div>
+      </main>
+
+      <main class="w3-center w3-border w3-border-black">
+        <div class="w3-col m6 w3-border w3-border-black">
+          <h2 class="intro w3-center">PRO HOUSES</h2>
+          <div class="w3-blue w3-border w3-border-black">
+            <div class="">
+              <form class="w3-center" action="/action_page.php">
+                <label for="sel1" class="w3-center"
+                  >Select list (select one):</label
+                >
+                <select
+                  class="w3-select border border-info w3-center"
+                  id="proHouse"
+                  name="proHouse"
+                  onchange="seproNames('pro')"
+                >
+                  <option value="St.Cecilia">St.Cecilia</option>
+                  <option value="St.Gabriel">St.Gabriel</option>
+                  <option value="St.Patrick">St.Patrick</option>
+                  <option value="St.Rose">St.Rose</option>
+                  <option value="St.Thomas">St.Thomas</option>
+                </select>
+              </form>
+            </div>
+
+            <div
+              class="w3-center w3-card-4 w3-border w3-border-black w3-margin w3-gray"
+            >
+              <div id="proHouseColor" class="w3-center"></div>
+              <div class="w3-center" id="proHouseNames"></div>
+            </div>
+          </div>
+
+          <div class="w3-card w3-gray w3-center">
+            <canvas
+              id="proHouseChart"
+              style="width: 100%; max-width: 600px"
+            ></canvas>
+          </div>
+        </div>
+
+        <div class="w3-col m6 w3-border w3-border-black">
+          <h2 class="intro p-2 text-center mt-3">SEP HOUSES</h2>
+
+          <div class="w3-amber w3-border w3-border-black">
+            <div class="">
+              <form class="w3-center" action="#">
+                <label for="sel1" class="">Select list (select one):</label>
+                <select
+                  class="w3-select w3-border w3-border-black w3-center"
+                  style="margin: auto"
+                  id="sepHouse"
+                  name="sepHouse"
+                  onchange="seproNames('sep')"
+                >
+                  <option value="Butler">Butler</option>
+                  <option value="Cipriani">Cipriani</option>
+                  <option value="Martin">Martin</option>
+                  <option value="Rienzi">Rienzi</option>
+                  <option value="Quevado">Quevado</option>
+                </select>
+              </form>
+            </div>
+            <div
+              class="w3-center w3-card-4 w3-border w3-border-black w3-margin w3-gray"
+            >
+              <div id="sepHouseColor" class="w3-center"></div>
+              <div class="w3-center" id="sepHouseNames"></div>
+            </div>
+          </div>
+
+          <div class="w3-card w3-gray w3-center">
+            <canvas
+              id="sepHouseChart"
+              style="width: 100%; max-width: 600px"
+            ></canvas>
+          </div>
+        </div>
+      </main>
+
+      <section class="w3-center" id="footer"></section>
+    </div>
+
+    <script src="js/myFunctions.js"></script>
+    <script src="js/players.js"></script>
+
+    <script src="js/dashboard.js"></script>
+  </body>
+</html>
