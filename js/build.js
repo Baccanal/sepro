@@ -4,7 +4,7 @@ header_data = `
 <header class="header w3-deep-purple ">
   
     <div class="w3-col m2 logo padding-5  w3-flex" style="align-items:center"> 
-      <img class="w3-image" src="../images/vip/logo.png" alt="TORNADO LOGO">  
+      <img class="w3-image" src="images/vip/logo.png" alt="TORNADO LOGO">  
     </div>
 
     <div class="w3-col m10 club padding-3 w3-flex" style="align-items:center ; justify-content:center; flex-direction:column">
