@@ -798,7 +798,7 @@ const players = [
     },
   },
   {
-    id: "PRO-241033",
+    id: "PRO-251033",
     firstName: "Amber",
     lastName: "Jones",
     nickName: "AJ",
@@ -812,13 +812,13 @@ const players = [
     },
   },
   {
-    id: "PRO-241034",
+    id: "PRO-251034",
     firstName: "Anais",
     lastName: "Ravello",
     nickName: "AR",
     birthDay: "2013-6-18\n",
     school: "Provi",
-    shirt: "",
+    shirt: "54",
     house: "St.Gabriel",
     active: "NO",
     fullName: function () {
@@ -849,6 +849,20 @@ const players = [
     shirt: "",
     house: "St.Gabriel",
     active: "YES",
+    fullName: function () {
+      return this.firstName + " " + this.lastName;
+    },
+  },
+  {
+    id: "PRO-262037",
+    firstName: "Deja",
+    lastName: "Williams",
+    nickName: "DW",
+    birthDay: "2012-8-1\n",
+    school: "Provi",
+    shirt: "53",
+    house: "St.Gabriel",
+    active: "NO",
     fullName: function () {
       return this.firstName + " " + this.lastName;
     },
