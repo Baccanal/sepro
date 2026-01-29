@@ -1,7 +1,7 @@
 // &&&&&&&& PLAYERS  &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 
 header_data = `
-<header class="header w3-deep-purple ">
+<header class="header w3-deep-purple w3-center">
   
     <div class="w3-col m2 logo padding-5  w3-flex" style="align-items:center"> 
       <img class="w3-image" src="images/vip/logo.png" alt="TORNADO LOGO">  
@@ -16,7 +16,7 @@ header_data = `
 `;
 
 footer_data = `
-        <footer class="footer w3-deep-purple">
+        <footer class="footer w3-deep-purple w3-center">
              <p>  TORNADO STARS &copy; ${new Date().getFullYear()}. <span class="w3-small"> Established 2025 by SAMMY-99 </span></p>
         </footer>
     `;
