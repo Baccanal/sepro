@@ -24,7 +24,7 @@ function u15players() {
       )}" style="width:300px;padding:3px">
     <img class="w3-${picColor(
       element.school
-    )} w3-round-large" src="../fotos/${switchSchoolPics(element.school)}/${
+    )} w3-round-large" src="/fotos/${switchSchoolPics(element.school)}/${
       element.id
     }.png" alt="Card image" style="width:100%">
       <div class="card-body">
@@ -64,7 +64,7 @@ function u17players() {
     )}" style="width:300px;padding:3px">
   <img class="w3-${picColor(
     element.school
-  )} w3-round-large" src="../fotos/${switchSchoolPics(element.school)}/${
+  )} w3-round-large" src="/fotos/${switchSchoolPics(element.school)}/${
       element.id
     }.png" alt="Card image" style="width:100%">
     <div class="card-body">
@@ -111,7 +111,7 @@ function u20players() {
     )}" style="width:300px;padding:3px">
   <img class="w3-${picColor(
     element.school
-  )} w3-round-large" src="../fotos/${switchSchoolPics(element.school)}/${
+  )} w3-round-large" src="/fotos/${switchSchoolPics(element.school)}/${
       element.id
     }.png" alt="Card image" style="width:100%">
           <div class="card-body">
