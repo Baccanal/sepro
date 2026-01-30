@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SEPRO Website</title>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://www.w3schools.com/lib/w3-colors-metro.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://www.w3schools.com/lib/w3-colors-2017.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Tangerine"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Allerta+Stencil"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lobster&effect=shadow-multiple"
+    />
+
+    <link rel="icon" type="image/x-icon" href="images/vip/favicon.ico" />
+    <link rel="stylesheet" href="css/sepro.css" />
+
+    <script defer src="js/build.js"></script>
+
+    <style>
+      .ring {
+        position: relative;
+      }
+      .ibox {
+        width: 9rem;
+        height: 16rem;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        display: none;
+      }
+
+      .iside {
+        width: 9rem;
+        height: 16rem;
+        margin: auto;
+      }
+
+      /* For devices with a minimum width of 768px (Medium) */
+      @media screen and (min-width: 768px) {
+        .ibox {
+          display: block;
+        }
+
+        .iside {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-xxl">
+      <section class="w3-center" id="header"></section>
+      <section class="" id="navigation"></section>
+
+      <section class="w3-center intro">
+        <div class="">INSPIRATIONAL SPORT QUOTES 🏐</div>
+      </section>
+
+      <main class="w3-center">
+        <img class="iside" src="images/game/refs.png" />
+
+        <blockquote class="w3-panel w3-leftbar w3-sand w3-center ring">
+          <p class="w3-left-align">
+            <i class="ri-double-quotes-l w3-xxxlarge"></i>
+          </p>
+          <p class="w3-large">
+            <i class="w3-sofia w3-xxlarge" id="myQuote"
+              >"Make it as simple as possible, but not simpler."</i
+            >
+          </p>
+          <p class="w3-right-align" id="myAuthor">Albert Einstein</p>
+          <p class="w3-xlarge">Explanation: <span id="translation"></span></p>
+          <button class="riddleBtn w3-center w3-btn" onclick="newQuote()">
+            Get Another Quote
+          </button>
+          <div class="ibox"><img src="images/game/refs.png" /></div>
+        </blockquote>
+      </main>
+
+      <section id="footer"></section>
+    </div>
+    <script src="js/quotes.js"></script>
+  </body>
+</html>
