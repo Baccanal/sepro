@@ -46,6 +46,37 @@
     <link rel="stylesheet" href="css/sepro.css" />
 
     <script defer src="js/build.js"></script>
+
+    <style>
+      .ring {
+        position: relative;
+      }
+      .ibox {
+        width: 9rem;
+        height: 16rem;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        display: none;
+      }
+
+      .iside {
+        width: 9rem;
+        height: 16rem;
+        margin: auto;
+      }
+
+      /* For devices with a minimum width of 768px (Medium) */
+      @media screen and (min-width: 768px) {
+        .ibox {
+          display: block;
+        }
+
+        .iside {
+          display: none;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="container-xxl">
@@ -57,24 +88,19 @@
       </section>
 
       <main class="w3-center">
-        <div class="w3-row">
-          <div class="w3-col m3"><img src="images/game/refs.png" /></div>
+        <img class="iside" src="images/game/refs.png" />
+        <div class="w3-card-4 w3-sand bold w3-padding-large ring">
+          <p id="question" class="w3-xlarge">Q?</p>
+          <div class="w3-btn" id="clickToShow">Answer</div>
 
-          <div class="w3-col m6">
-            <div class="w3-card-4 w3-sand bold w3-padding-large">
-              <p id="question" class="w3-xlarge">Q?</p>
-              <div class="w3-btn" id="clickToShow">Answer</div>
-
-              <div class="answerBox">
-                <div class="answer w3-xlarge" id="answer">A!</div>
-              </div>
-
-              <button class="riddleBtn w3-btn" onclick="newRiddle()">
-                Get Another Riddle
-              </button>
-            </div>
+          <div class="answerBox">
+            <div class="answer w3-xlarge" id="answer">A!</div>
           </div>
-          <div class="w3-col m3"></div>
+
+          <button class="riddleBtn w3-btn" onclick="newRiddle()">
+            Get Another Riddle
+          </button>
+          <div class="ibox"><img src="images/game/refs.png" /></div>
         </div>
       </main>
 

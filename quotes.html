@@ -46,6 +46,37 @@
     <link rel="stylesheet" href="css/sepro.css" />
 
     <script defer src="js/build.js"></script>
+
+    <style>
+      .ring {
+        position: relative;
+      }
+      .ibox {
+        width: 9rem;
+        height: 16rem;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        display: none;
+      }
+
+      .iside {
+        width: 9rem;
+        height: 16rem;
+        margin: auto;
+      }
+
+      /* For devices with a minimum width of 768px (Medium) */
+      @media screen and (min-width: 768px) {
+        .ibox {
+          display: block;
+        }
+
+        .iside {
+          display: none;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="container-xxl">
@@ -56,32 +87,25 @@
         <div class="">INSPIRATIONAL SPORT QUOTES 🏐</div>
       </section>
 
-      <main class="">
-        <div class="w3-row">
-          <div class="w3-col m1"><img src="images/game/set.png" /></div>
+      <main class="w3-center">
+        <img class="iside" src="images/game/refs.png" />
 
-          <div class="w3-col m10">
-            <blockquote class="w3-panel w3-leftbar w3-sand w3-center">
-              <p class="w3-left-align">
-                <i class="ri-double-quotes-l w3-xxxlarge"></i>
-              </p>
-              <p class="w3-large">
-                <i class="w3-sofia w3-xxlarge" id="myQuote"
-                  >"Make it as simple as possible, but not simpler."</i
-                >
-              </p>
-              <p class="w3-right-align" id="myAuthor">Albert Einstein</p>
-              <p class="w3-xlarge">
-                Explanation: <span id="translation"></span>
-              </p>
-              <button class="riddleBtn w3-center w3-btn" onclick="newQuote()">
-                Get Another Quote
-              </button>
-            </blockquote>
-          </div>
-
-          <div class="w3-col m1"></div>
-        </div>
+        <blockquote class="w3-panel w3-leftbar w3-sand w3-center ring">
+          <p class="w3-left-align">
+            <i class="ri-double-quotes-l w3-xxxlarge"></i>
+          </p>
+          <p class="w3-large">
+            <i class="w3-sofia w3-xxlarge" id="myQuote"
+              >"Make it as simple as possible, but not simpler."</i
+            >
+          </p>
+          <p class="w3-right-align" id="myAuthor">Albert Einstein</p>
+          <p class="w3-xlarge">Explanation: <span id="translation"></span></p>
+          <button class="riddleBtn w3-center w3-btn" onclick="newQuote()">
+            Get Another Quote
+          </button>
+          <div class="ibox"><img src="images/game/refs.png" /></div>
+        </blockquote>
       </main>
 
       <section id="footer"></section>
