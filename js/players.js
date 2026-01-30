@@ -150,7 +150,7 @@ const players = [
     school: "sepos",
     shirt: "16",
     house: "Rienzi",
-    active: "NO",
+    active: "YES",
     fullName: function () {
       return this.firstName + " " + this.lastName;
     },
@@ -342,7 +342,7 @@ const players = [
     school: "Provi",
     shirt: "1",
     house: "St_Thomas",
-    active: "NO",
+    active: "YES",
     fullName: function () {
       return this.firstName + " " + this.lastName;
     },

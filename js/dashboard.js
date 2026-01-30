@@ -18,7 +18,7 @@ const pro_u17 = players.filter(
 
 //console.log(pro_u15);
 
-document.getElementById("pro17").innerText = pro_u17.length + pro_u15.length;
+document.getElementById("pro17").innerText = pro_u17.length;
 
 const pro_u20 = players.filter(
   (player) =>
@@ -27,8 +27,7 @@ const pro_u20 = players.filter(
     division(player.birthDay) === "Open Player"
 );
 
-document.getElementById("pro20").innerText =
-  pro_u17.length + pro_u15.length + pro_u20.length;
+document.getElementById("pro20").innerText = pro_u20.length;
 document.getElementById("proTotal").innerText =
   pro_u15.length + pro_u17.length + pro_u20.length;
 
@@ -48,7 +47,7 @@ const sep_u17 = players.filter(
     division(player.birthDay) === "U17 Player"
 );
 
-document.getElementById("sep17").innerText = sep_u15.length + sep_u17.length;
+document.getElementById("sep17").innerText = sep_u17.length;
 
 const sep_u20 = players.filter(
   (player) =>
@@ -57,8 +56,7 @@ const sep_u20 = players.filter(
     division(player.birthDay) === "Open Player"
 );
 
-document.getElementById("sep20").innerText =
-  sep_u15.length + sep_u17.length + sep_u20.length;
+document.getElementById("sep20").innerText = sep_u20.length;
 document.getElementById("sepTotal").innerText =
   sep_u15.length + sep_u17.length + sep_u20.length;
 
