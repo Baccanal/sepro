@@ -356,7 +356,7 @@ const players = [
     school: "Provi",
     shirt: "1",
     house: "St_Gabriel",
-    active: "NO",
+    active: "YES",
     fullName: function () {
       return this.firstName + " " + this.lastName;
     },
@@ -922,7 +922,7 @@ const players = [
     school: "Provi",
     shirt: "1",
     house: " ",
-    active: "NO",
+    active: "YES",
     fullName: function () {
       return this.firstName + " " + this.lastName;
     },
