@@ -146,7 +146,9 @@ body {
 }
 
 /*/////////////////////////////////*/
-.w3-roboto{font-family: Roboto, sans-serif;}
+.w3-roboto {
+  font-family: Roboto, sans-serif;
+}
 
 .w3-sofia {
   font-family: Sofia, cursive;
@@ -168,7 +170,6 @@ body {
 
 footer.footer,
 header.header {
-  kkbackground-color: var(--violet);
   color: #fff;
   padding: 0.1rem;
   font-family: poppins;
@@ -230,20 +231,14 @@ header div.logo img {
 .intro {
   background-color: var(--burnt-orange);
   color: #fff;
-  kktext-shadow: 1px 1px 8px #222;
+
   text-align: center;
   font-size: 24px;
   overflow: hidden;
   border: #fff solid 0.1rem;
   z-index: -100;
   font-weight: bold;
-   
-  
-  }
 }
-.visits {
-}
-
 
 /*/////////////////////////////////*/
 /***  BIRTHDAYS  ****/
@@ -430,7 +425,7 @@ div.card img.sep {
 
   display: flex;
   flex-wrap: wrap;
-  
+
   margin: 0 auto;
 
   perspective: 1000px;
@@ -492,6 +487,7 @@ div.card img.sep {
 ul.items {
   display: flex;
   justify-content: center;
+  border: 2px solid white;
 }
 
 nav .items {
@@ -501,15 +497,13 @@ nav .items {
 }
 
 nav .items .item {
-  /*
   padding: 7px 25px;
-  
+
   color: #007bff;
   border: 2px solid wheat;
   border-radius: 50px;
   background-color: #fff;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
-  */
 
   font-size: 18px;
   font-weight: 500;
@@ -517,7 +511,6 @@ nav .items .item {
   margin: 5px;
   width: 50px;
 
-  /*
   height: 40px;
   width: 140px;
   padding: 7px 25px;
@@ -528,7 +521,6 @@ nav .items .item {
   cursor: pointer;
   margin: 20px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
-*/
 }
 
 nav .items .item:hover {
