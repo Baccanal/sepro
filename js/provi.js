@@ -87,7 +87,7 @@ function u17players() {
 
 function u20players() {
   const pro_u20 = proviActivePlayers.filter(
-    (element) => division(element.birthDay) === "U20 Player"
+    (element) => division(element.birthDay) === "Open Player"
   );
 
   const topcard = `OPEN PLAYERS`;
