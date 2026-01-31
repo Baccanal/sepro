@@ -337,7 +337,7 @@ function picColor(school) {
 
 function backColor(school) {
   if (school.toUpperCase() == "PROVI") {
-    return "light-blue";
+    return "2017-lapis-blue";
   } else if (school.toUpperCase() == "SEPOS") {
     return "2017-tawny-port";
   }
