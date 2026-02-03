@@ -298,8 +298,8 @@ function age(dob) {
 
 function division(dob) {
   let level;
-  const limit_u15 = 2012;
-  const limit_u17 = 2010;
+  const limit_u15 = 2011;
+  const limit_u17 = 2009;
   const x = dob.split("-");
   const byear = x[0];
 
