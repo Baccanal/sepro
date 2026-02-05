@@ -49,7 +49,7 @@ nav_data = `
     <a href="quotes.html" class="w3-bar-item w3-button w3-mobile"><i class="ri-chat-quote-line w3-text-teal"></i>  Sport Quotes</a>
     <a href="jokes.html" class="w3-bar-item w3-button w3-mobile"><i class="ri-emotion-laugh-line w3-text-deep-orange"></i>  Sport Riddles</a>
     <a href="photos.html" class="w3-bar-item w3-button w3-mobile"><i class="ri-image-fill w3-text-yellow"></i>  Photo Gallery</a>
-    <a href="videos.html" class="w3-bar-item w3-button w3-mobile"><i class="ri-movie-line w3-text-cyan"></i>  Special Videos</a>
+    <a href="videos.html" class="w3-bar-item w3-button w3-mobile"><i class="ri-movie-line w3-text-cyan"></i>  Videos Clips</a>
     <a href="memory.html" class="w3-bar-item w3-button w3-mobile"><i class="ri-game-line w3-text-pink"></i>  Memory Game</a>
     <a href="dashboard.html" class="w3-bar-item w3-button w3-mobile"><i class="ri-bar-chart-2-fill w3-text-aqua"></i>  Dashboard</a>
 
