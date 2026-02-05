@@ -177,7 +177,7 @@ birthdayPlayers.forEach(
       new Date(element.birthDay).getMonth()
     )}
 
-      <div class="w3-center"> <img class = "img-fluid" src="images/vip/birthDay.png" alt="Pic" > </div>
+      <div class="w3-center"> <img class = "img-fluid" src="images/vip/birthday.png" alt="Pic" > </div>
     </div>
   </div>
     `)
