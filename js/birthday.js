@@ -1,8 +1,8 @@
 const todayMonth = new Date().getMonth();
-//const todayMonth = 2;
+//const todayMonth = 1;
 
 const todayDate = new Date().getDate();
-//const todayDate = 2;
+//const todayDate = 5;
 
 const zodiac_sign = `${findZodiacSign(todayDate, todayMonth)}`;
 
@@ -127,7 +127,7 @@ nextFour_data.forEach((element) => {
 
 //**********************BIRTHDAYS**********************************************
 zodiacDay += `
-<div class="w3-card-4" style="width:40%;">
+<div class="w3-card-4">
 <header class="w3-container w3-blue">
 <h3 id ="today"></h3><hr>
 <h2> ${zodiac_sign} the ${zodiacSymbol(zodiac_sign)}</h2>
@@ -177,7 +177,7 @@ birthdayPlayers.forEach(
       new Date(element.birthDay).getMonth()
     )}
 
-      <div class="mx-auto" style="width:100%"> <img class = "img-fluid" src="./images/vip/birthDay.png" alt="Pic" style="width:100%"> </div>
+      <div class="w3-center"> <img class = "img-fluid" src="images/vip/birthDay.png" alt="Pic" > </div>
     </div>
   </div>
     `)
