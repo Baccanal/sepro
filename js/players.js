@@ -342,7 +342,7 @@ const players = [
     school: "Provi",
     shirt: "1",
     house: "St_Thomas",
-    active: "YES",
+    active: "NO",
     fullName: function () {
       return this.firstName + " " + this.lastName;
     },
@@ -356,7 +356,7 @@ const players = [
     school: "Provi",
     shirt: "1",
     house: "St_Gabriel",
-    active: "YES",
+    active: "NO",
     fullName: function () {
       return this.firstName + " " + this.lastName;
     },
@@ -922,6 +922,36 @@ const players = [
     school: "Provi",
     shirt: "1",
     house: " ",
+    active: "NO",
+    fullName: function () {
+      return this.firstName + " " + this.lastName;
+    },
+  },
+
+  {
+    id: "PRO-251038",
+    firstName: "Kaylee",
+    lastName: "Waldron",
+    nickName: "KW",
+    birthDay: "2013-10-22\n",
+    school: "Provi",
+    shirt: "55",
+    house: "St.Thomas",
+    active: "YES",
+    fullName: function () {
+      return this.firstName + " " + this.lastName;
+    },
+  },
+
+  {
+    id: "PRO-262039",
+    firstName: "Milan",
+    lastName: "Jones",
+    nickName: "Lanii",
+    birthDay: "2012-07-03\n",
+    school: "Provi",
+    shirt: "45",
+    house: "St.Patrick",
     active: "YES",
     fullName: function () {
       return this.firstName + " " + this.lastName;
