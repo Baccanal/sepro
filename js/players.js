@@ -404,7 +404,52 @@ const players = [
 
   // PROVIDENCE GIRLS CATHOLIC SCHOOL
 
+  /*
   {
+    id: "PRO-251026",
+    firstName: "Alexis",
+    lastName: "Peru-Ishmael",
+    nickName: "Lexie",
+    birthDay: "2013-10-5\n",
+    school: "Provi",
+    shirt: "5",
+    house: "St.Cecilia",
+    active: "YES",
+    fullName: function () {
+      return this.firstName + " " + this.lastName;
+    },
+  },
+  
+  {
+    id: "PRO-251027",
+    firstName: "Gabrielle",
+    lastName: "Jones",
+    nickName: "Gabby",
+    birthDay: "2013-09-17\n",
+    school: "Provi",
+    shirt: "6",
+    house: "St.Thomas",
+    active: "YES",
+    fullName: function () {
+      return this.firstName + " " + this.lastName;
+    },
+  },
+  
+  {
+    id: "PRO-251028",
+    firstName: "Reinelle",
+    lastName: "Stephen",
+    nickName: "Reinelle",
+    birthDay: "2013-04-16\n",
+    school: "Provi",
+    shirt: "7",
+    house: "St.Thomas",
+    active: "YES",
+    fullName: function () {
+      return this.firstName + " " + this.lastName;
+    },
+  },
+{
     id: "PRO-191001",
     firstName: "Carissa",
     lastName: "Newton",
@@ -413,20 +458,6 @@ const players = [
     school: "Provi",
     shirt: "1",
     house: "St_Thomas",
-    active: "NO",
-    fullName: function () {
-      return this.firstName + " " + this.lastName;
-    },
-  },
-  {
-    id: "PRO-211002",
-    firstName: "Johanna",
-    lastName: "Jacky",
-    nickName: "Edges",
-    birthDay: "2009-5-01",
-    school: "Provi",
-    shirt: "1",
-    house: "St_Gabriel",
     active: "NO",
     fullName: function () {
       return this.firstName + " " + this.lastName;
@@ -491,36 +522,6 @@ const players = [
       return this.firstName + " " + this.lastName;
     },
   },
-
-  {
-    id: "PRO-231007",
-    firstName: "Laila",
-    lastName: "Smart",
-    nickName: "Lala",
-    birthDay: "2011-3-01\n",
-    school: "Provi",
-    shirt: "13",
-    house: "St.Thomas",
-    active: "YES",
-    fullName: function () {
-      return this.firstName + " " + this.lastName;
-    },
-  },
-  {
-    id: "PRO-231008",
-    firstName: "Tyesha",
-    lastName: "Ross",
-    nickName: "TR",
-    birthDay: "2011-1-09\n",
-    school: "Provi",
-    shirt: "9",
-    house: "St.Patrick",
-    active: "YES",
-    fullName: function () {
-      return this.firstName + " " + this.lastName;
-    },
-  },
-
   {
     id: "PRO-231009",
     firstName: "Asia-Lyn",
@@ -545,6 +546,281 @@ const players = [
     school: "Provi",
     shirt: "36",
     house: "St.Cecilia",
+    active: "YES",
+    fullName: function () {
+      return this.firstName + " " + this.lastName;
+    },
+  },
+
+  {
+    id: "PRO-241015",
+    firstName: "Isabella",
+    lastName: "De la Rosa",
+    nickName: "Izzy",
+    birthDay: "2011-03-19\n",
+    school: "Provi",
+    shirt: "26",
+    house: "St.Rose",
+    active: "YES",
+    fullName: function () {
+      return this.firstName + " " + this.lastName;
+    },
+  },
+  {
+    id: "PRO-241016",
+    firstName: "Kayleigh",
+    lastName: "Moore",
+    nickName: "Kaylz",
+    birthDay: "2012-05-23\n",
+    school: "Provi",
+    shirt: "42",
+    house: "St.Cecilia",
+    active: "YES",
+    fullName: function () {
+      return this.firstName + " " + this.lastName;
+    },
+  },
+
+  {
+    id: "PRO-251025",
+    firstName: "Sarah",
+    lastName: "Mosca",
+    nickName: "SM",
+    birthDay: "2013-6-4\n",
+    school: "Provi",
+    shirt: "4",
+    house: "St.Gabriel",
+    active: "YES",
+    fullName: function () {
+      return this.firstName + " " + this.lastName;
+    },
+  },
+  
+  {
+    id: "PRO-251029",
+    firstName: "Isabella",
+    lastName: "Davis",
+    nickName: "Izzi",
+    birthDay: "2013-11-17\n",
+    school: "Provi",
+    shirt: "14",
+    house: "St.Thomas",
+    active: "YES",
+    fullName: function () {
+      return this.firstName + " " + this.lastName;
+    },
+  },
+
+  {
+    id: "PRO-262037",
+    firstName: "Deja",
+    lastName: "Williams",
+    nickName: "DW",
+    birthDay: "2012-8-1\n",
+    school: "Provi",
+    shirt: "53",
+    house: "St.Gabriel",
+    active: "YES",
+    fullName: function () {
+      return this.firstName + " " + this.lastName;
+    },
+  },
+  
+  
+  {
+    id: "PRO-Star-1",
+    firstName: "Micaela",
+    lastName: "Grant",
+    nickName: "Micki",
+    birthDay: "2009-8-24\n",
+    school: "Provi",
+    shirt: "23",
+    house: "St.Cecilia",
+    active: "NO",
+    fullName: function () {
+      return this.firstName + " " + this.lastName;
+    },
+  },
+
+  {
+    id: "PRO-Star-2",
+    firstName: "Jourden",
+    lastName: "Charles",
+    nickName: "Jordan",
+    birthDay: "2009-6-28\n",
+    school: "Provi",
+    shirt: "1",
+    house: "St.Patrick",
+    active: "NO",
+    fullName: function () {
+      return this.firstName + " " + this.lastName;
+    },
+  },
+
+  {
+    id: "PRO-Star-3",
+    firstName: "Raniyah",
+    lastName: "Seebaran",
+    nickName: "Niyah",
+    birthDay: "2008-12-23\n",
+    school: "Provi",
+    shirt: "7",
+    house: "St.Cecilia",
+    active: "NO",
+    fullName: function () {
+      return this.firstName + " " + this.lastName;
+    },
+  },
+
+  {
+    id: "PRO-Star-4",
+    firstName: "Makaina",
+    lastName: "Seijas",
+    nickName: "Kaina",
+    birthDay: "2007-09-08\n",
+    school: "Provi",
+    shirt: "1",
+    house: " ",
+    active: "NO",
+    fullName: function () {
+      return this.firstName + " " + this.lastName;
+    },
+  },
+  {
+    id: "PRO-262039",
+    firstName: "Milan",
+    lastName: "Jones",
+    nickName: "Lanii",
+    birthDay: "2012-07-03\n",
+    school: "Provi",
+    shirt: "45",
+    house: "St.Patrick",
+    active: "YES",
+    fullName: function () {
+      return this.firstName + " " + this.lastName;
+    },
+  },
+
+  {
+    id: "PRO-251036",
+    firstName: "Zalykah",
+    lastName: "Douglas",
+    nickName: "ZD",
+    birthDay: "2013-10-8\n",
+    school: "Provi",
+    shirt: "",
+    house: "St.Gabriel",
+    active: "YES",
+    fullName: function () {
+      return this.firstName + " " + this.lastName;
+    },
+  },
+
+  {
+    id: "PRO-251031",
+    firstName: "Darella",
+    lastName: "Pitilal",
+    nickName: "",
+    birthDay: "2013-8-7\n",
+    school: "Provi",
+    shirt: "50",
+    house: "St.Gabriel",
+    active: "YES",
+    fullName: function () {
+      return this.firstName + " " + this.lastName;
+    },
+  },
+
+  {
+    id: "PRO-251032",
+    firstName: "Jada",
+    lastName: "Orosco",
+    nickName: "Jada",
+    birthDay: "2013-02-05\n",
+    school: "Provi",
+    shirt: "52",
+    house: "St.Thomas",
+    active: "YES",
+    fullName: function () {
+      return this.firstName + " " + this.lastName;
+    },
+  },
+  
+  {
+    id: "PRO-251033",
+    firstName: "Amber",
+    lastName: "Jones",
+    nickName: "AJ",
+    birthDay: "2013-7-31\n",
+    school: "Provi",
+    shirt: "27",
+    house: "St.Rose",
+    active: "YES",
+    fullName: function () {
+      return this.firstName + " " + this.lastName;
+    },
+  },
+  
+  {
+    id: "PRO-251034",
+    firstName: "Anais",
+    lastName: "Ravello",
+    nickName: "AR",
+    birthDay: "2013-6-18\n",
+    school: "Provi",
+    shirt: "54",
+    house: "St.Gabriel",
+    active: "YES",
+    fullName: function () {
+      return this.firstName + " " + this.lastName;
+    },
+  },
+
+
+
+
+
+
+  */
+
+  {
+    id: "PRO-211002",
+    firstName: "Johanna",
+    lastName: "Jacky",
+    nickName: "Edges",
+    birthDay: "2009-5-01",
+    school: "Provi",
+    shirt: "1",
+    house: "St_Gabriel",
+    active: "NO",
+    fullName: function () {
+      return this.firstName + " " + this.lastName;
+    },
+  },
+
+  {
+    id: "PRO-231007",
+    firstName: "Laila",
+    lastName: "Smart",
+    nickName: "Lala",
+    birthDay: "2011-3-01\n",
+    school: "Provi",
+    shirt: "13",
+    house: "St.Thomas",
+    active: "YES",
+    fullName: function () {
+      return this.firstName + " " + this.lastName;
+    },
+  },
+  {
+    id: "PRO-231008",
+    firstName: "Tyesha",
+    lastName: "Ross",
+    nickName: "TR",
+    birthDay: "2011-1-09\n",
+    school: "Provi",
+    shirt: "9",
+    house: "St.Patrick",
     active: "YES",
     fullName: function () {
       return this.firstName + " " + this.lastName;
@@ -611,34 +887,6 @@ const players = [
     },
   },
 
-  {
-    id: "PRO-241015",
-    firstName: "Isabella",
-    lastName: "De la Rosa",
-    nickName: "Izzy",
-    birthDay: "2011-03-19\n",
-    school: "Provi",
-    shirt: "26",
-    house: "St.Rose",
-    active: "YES",
-    fullName: function () {
-      return this.firstName + " " + this.lastName;
-    },
-  },
-  {
-    id: "PRO-241016",
-    firstName: "Kayleigh",
-    lastName: "Moore",
-    nickName: "Kaylz",
-    birthDay: "2012-05-23\n",
-    school: "Provi",
-    shirt: "42",
-    house: "St.Cecilia",
-    active: "YES",
-    fullName: function () {
-      return this.firstName + " " + this.lastName;
-    },
-  },
   {
     id: "PRO-241017",
     firstName: "Nya",
@@ -755,82 +1003,7 @@ const players = [
       return this.firstName + " " + this.lastName;
     },
   },
-  {
-    id: "PRO-251025",
-    firstName: "Sarah",
-    lastName: "Mosca",
-    nickName: "SM",
-    birthDay: "2013-6-4\n",
-    school: "Provi",
-    shirt: "4",
-    house: "St.Gabriel",
-    active: "YES",
-    fullName: function () {
-      return this.firstName + " " + this.lastName;
-    },
-  },
-  /*
-  {
-    id: "PRO-251026",
-    firstName: "Alexis",
-    lastName: "Peru-Ishmael",
-    nickName: "Lexie",
-    birthDay: "2013-10-5\n",
-    school: "Provi",
-    shirt: "5",
-    house: "St.Cecilia",
-    active: "YES",
-    fullName: function () {
-      return this.firstName + " " + this.lastName;
-    },
-  },
-  */
-  /*
-  {
-    id: "PRO-251027",
-    firstName: "Gabrielle",
-    lastName: "Jones",
-    nickName: "Gabby",
-    birthDay: "2013-09-17\n",
-    school: "Provi",
-    shirt: "6",
-    house: "St.Thomas",
-    active: "YES",
-    fullName: function () {
-      return this.firstName + " " + this.lastName;
-    },
-  },
-  */
-  /*
-  {
-    id: "PRO-251028",
-    firstName: "Reinelle",
-    lastName: "Stephen",
-    nickName: "Reinelle",
-    birthDay: "2013-04-16\n",
-    school: "Provi",
-    shirt: "7",
-    house: "St.Thomas",
-    active: "YES",
-    fullName: function () {
-      return this.firstName + " " + this.lastName;
-    },
-  },
-  */
-  {
-    id: "PRO-251029",
-    firstName: "Isabella",
-    lastName: "Davis",
-    nickName: "Izzi",
-    birthDay: "2013-11-17\n",
-    school: "Provi",
-    shirt: "14",
-    house: "St.Thomas",
-    active: "YES",
-    fullName: function () {
-      return this.firstName + " " + this.lastName;
-    },
-  },
+
   {
     id: "PRO-251030",
     firstName: "Mariella",
@@ -845,68 +1018,7 @@ const players = [
       return this.firstName + " " + this.lastName;
     },
   },
-  {
-    id: "PRO-251031",
-    firstName: "Darella",
-    lastName: "Pitilal",
-    nickName: "",
-    birthDay: "2013-8-7\n",
-    school: "Provi",
-    shirt: "50",
-    house: "St.Gabriel",
-    active: "YES",
-    fullName: function () {
-      return this.firstName + " " + this.lastName;
-    },
-  },
-  /*
-  {
-    id: "PRO-251032",
-    firstName: "Jada",
-    lastName: "Orosco",
-    nickName: "Jada",
-    birthDay: "2013-02-05\n",
-    school: "Provi",
-    shirt: "52",
-    house: "St.Thomas",
-    active: "YES",
-    fullName: function () {
-      return this.firstName + " " + this.lastName;
-    },
-  },
-  */
-  /*
-  {
-    id: "PRO-251033",
-    firstName: "Amber",
-    lastName: "Jones",
-    nickName: "AJ",
-    birthDay: "2013-7-31\n",
-    school: "Provi",
-    shirt: "27",
-    house: "St.Rose",
-    active: "YES",
-    fullName: function () {
-      return this.firstName + " " + this.lastName;
-    },
-  },
-  */
-  /*
-  {
-    id: "PRO-251034",
-    firstName: "Anais",
-    lastName: "Ravello",
-    nickName: "AR",
-    birthDay: "2013-6-18\n",
-    school: "Provi",
-    shirt: "54",
-    house: "St.Gabriel",
-    active: "YES",
-    fullName: function () {
-      return this.firstName + " " + this.lastName;
-    },
-  },
-  */
+
   {
     id: "PRO-251035",
     firstName: "Xara",
@@ -921,97 +1033,6 @@ const players = [
       return this.firstName + " " + this.lastName;
     },
   },
-  {
-    id: "PRO-251036",
-    firstName: "Zalykah",
-    lastName: "Douglas",
-    nickName: "ZD",
-    birthDay: "2013-10-8\n",
-    school: "Provi",
-    shirt: "",
-    house: "St.Gabriel",
-    active: "YES",
-    fullName: function () {
-      return this.firstName + " " + this.lastName;
-    },
-  },
-  /*
-  {
-    id: "PRO-262037",
-    firstName: "Deja",
-    lastName: "Williams",
-    nickName: "DW",
-    birthDay: "2012-8-1\n",
-    school: "Provi",
-    shirt: "53",
-    house: "St.Gabriel",
-    active: "YES",
-    fullName: function () {
-      return this.firstName + " " + this.lastName;
-    },
-  },
-  */
-  /*
-  {
-    id: "PRO-Star-1",
-    firstName: "Micaela",
-    lastName: "Grant",
-    nickName: "Micki",
-    birthDay: "2009-8-24\n",
-    school: "Provi",
-    shirt: "23",
-    house: "St.Cecilia",
-    active: "NO",
-    fullName: function () {
-      return this.firstName + " " + this.lastName;
-    },
-  },
-
-  {
-    id: "PRO-Star-2",
-    firstName: "Jourden",
-    lastName: "Charles",
-    nickName: "Jordan",
-    birthDay: "2009-6-28\n",
-    school: "Provi",
-    shirt: "1",
-    house: "St.Patrick",
-    active: "NO",
-    fullName: function () {
-      return this.firstName + " " + this.lastName;
-    },
-  },
-
-  {
-    id: "PRO-Star-3",
-    firstName: "Raniyah",
-    lastName: "Seebaran",
-    nickName: "Niyah",
-    birthDay: "2008-12-23\n",
-    school: "Provi",
-    shirt: "7",
-    house: "St.Cecilia",
-    active: "NO",
-    fullName: function () {
-      return this.firstName + " " + this.lastName;
-    },
-  },
-
-  {
-    id: "PRO-Star-4",
-    firstName: "Makaina",
-    lastName: "Seijas",
-    nickName: "Kaina",
-    birthDay: "2007-09-08\n",
-    school: "Provi",
-    shirt: "1",
-    house: " ",
-    active: "NO",
-    fullName: function () {
-      return this.firstName + " " + this.lastName;
-    },
-  },
-  */
 
   {
     id: "PRO-251038",
@@ -1022,21 +1043,6 @@ const players = [
     school: "Provi",
     shirt: "55",
     house: "St.Thomas",
-    active: "YES",
-    fullName: function () {
-      return this.firstName + " " + this.lastName;
-    },
-  },
-
-  {
-    id: "PRO-262039",
-    firstName: "Milan",
-    lastName: "Jones",
-    nickName: "Lanii",
-    birthDay: "2012-07-03\n",
-    school: "Provi",
-    shirt: "45",
-    house: "St.Patrick",
     active: "YES",
     fullName: function () {
       return this.firstName + " " + this.lastName;
