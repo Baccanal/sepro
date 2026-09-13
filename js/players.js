@@ -343,7 +343,7 @@ const players = [
   },
 
   {
-    id: "SEP-251020",
+    id: "SEP-261024",
     firstName: "Jolie",
     lastName: "Burke",
     nickName: "Burkey",
@@ -358,7 +358,7 @@ const players = [
   },
 
   {
-    id: "SEP-251021",
+    id: "SEP-261025",
     firstName: "Naimah",
     lastName: "Gomez",
     nickName: "",
@@ -373,7 +373,7 @@ const players = [
   },
 
   {
-    id: "SEP-251022",
+    id: "SEP-261026",
     firstName: "Ariel",
     lastName: "Elvin",
     nickName: "Japanese",
@@ -388,7 +388,7 @@ const players = [
   },
 
   {
-    id: "SEP-251023",
+    id: "SEP-261027",
     firstName: "Jaazaniah",
     lastName: "Marcelle",
     nickName: "Jazzy",
