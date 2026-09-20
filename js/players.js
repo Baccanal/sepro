@@ -210,6 +210,21 @@ const players = [
   },
 
   {
+    id: "SEP-221039",
+    firstName: "Kareesa",
+    lastName: "Alexander",
+    nickName: "Creesy",
+    birthDay: "2009-11-11\n",
+    school: "sepos",
+    shirt: "",
+    house: "",
+    active: "YES",
+    fullName: function () {
+      return this.firstName + " " + this.lastName;
+    },
+  },
+
+  {
     id: "SEP-222008",
     firstName: "Allissa",
     lastName: "Mark",
@@ -223,6 +238,7 @@ const players = [
       return this.firstName + " " + this.lastName;
     },
   },
+
   {
     id: "SEP-223009",
     firstName: "Kayleen",
